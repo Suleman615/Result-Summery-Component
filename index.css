@@ -1,0 +1,100 @@
+.container{
+    height: 400px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1, 1fr);
+    border-radius: 5%;
+    box-shadow: 2px 2px 50px rgb(128, 109, 233);
+    
+}
+
+ 
+
+
+.result{
+    
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 5%;
+}
+
+.circle{
+    height: 40%; 
+    width: 60%; 
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)); 
+    margin: auto; 
+    border-radius: 50%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.item{
+    height: 2.5em;
+    width: 80%;
+    margin: 3% 10%;
+    padding: 0% 10px;
+    background-color: aqua;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-between; */
+    align-items: center;
+}
+
+
+html{
+    height: 100vh;
+}
+body{
+    height: 100% ;
+    overflow: hidden;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+p{
+    font-size: 18px;
+    margin: 7% 5%;
+    text-align: center;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+button{
+    background: hsl(224, 30%, 27%);
+    height: 40px; 
+    margin:5%  15%; 
+    border-radius: 5cm; 
+    width: 70%; 
+    font-weight: 700;
+    border: none;
+    color: white;
+}
+button:hover{
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+   
+    body{
+        overflow: visible;
+    
+    }
+    .container{
+        height: 800px;
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+}
